@@ -1,0 +1,76 @@
+.body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.main-sec {
+    background-image: url(../images/pexels-aleksandar-pasaric-325185.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: fit-content !important;
+    background-repeat: no-repeat;
+    overflow: scroll;
+
+}
+
+.layer {
+    background-color: rgba(0, 0, 0, .2);
+    background-image: none;
+
+}
+
+.nav-link {
+    color: white !important;
+    transition: all .7s;
+}
+
+.nav-link:hover {
+    color: #03A0D9 !important;
+}
+
+.home-link {
+    color: #03A0D9 !important;
+}
+
+.site-desc {
+    font-size: 0.65em;
+    display: block;
+    color: white;
+}
+
+::placeholder {
+    color: white !important;
+    opacity: .5 !important;
+}
+
+.btn {
+    background-color: teal !important;
+    color: white;
+}
+
+/*------------Data--------------*/
+.full-data .day-2 {
+    height: 440px !important;
+    background-color: rgba(0, 0, 0, .7) !important;
+}
+
+.full-data .day-1 {
+    height: fit-content !important;
+    background-color: rgba(0, 0, 0, .4) !important;
+
+}
+
+.full-data .day-3 {
+    height: 440px !important;
+    background-color: rgba(0, 0, 0, .4) !important;
+
+}
+
+#temp {
+    font-size: 60px !important;
+}
+
+#region {
+    font-size: 14px !important;
+    color: rgba(0, 0, 0, .6) !important;
+}

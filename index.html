@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <script src="js/all.js"></script>
+</head>
+
+<body>
+
+    <section class="main-sec">
+        <div class="w-100 vh-100">
+            <div class="layer">
+                <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+                    <div class="container">
+                        <div> <img src="images/logo.png" class="w-75 pe-1 " alt="">
+                        </div>
+                        <a class="navbar-brand text-white" href="#">
+                            Weather
+                            <span class="site-desc fw-lighter">Taglines goes here</span>
+
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                                <li class="nav-item ">
+                                    <a class="nav-link active home-link" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">News</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Live cameras</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">photos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+
+                <section class="input mt-5 container  ">
+                    <div class="input-group mb-3">
+                        <input id="search-btn" type="text" class="form-control  bg-black text-white p-3 "
+                            placeholder=" Find Your Location" aria-label="Recipient's username"
+                            aria-describedby="button-addon2" onkeyup="All()">
+                    </div>
+                </section>
+
+                <section class="container full-data" id="data">
+                    <div class="row mt-4 m-1">
+                        <div class="col-md-4 day-1 rounded  ">
+                            <div class="d-flex justify-content-between text-white p-2 ">
+                                <p id="day-name"></p>
+
+                                <p id="date-details"></p>
+                            </div>
+
+                            <div class=" pb-5" id="data">
+                                <p id="name" class="text-white p-3 pb-0"></p>
+                                <p id="region" class=" fs-6 p-3 pt-0"></p>
+                                <div class="temp-data d-flex justify-content-between">
+                                    <p id="temp" class="text-white p-3 pt-0 fw-bolder w-50"></p>
+                                    <div id="icon-1" class="w-50"></div>
+                                </div>
+                                <p id="condition-text" class="text-info p-3"></p>
+
+                                <div class="extra-data d-flex justify-content-around ">
+                                    <div class="text-white d-flex ">
+                                        <i class="fa-solid fa-umbrella pe-2 pt-1 "></i>
+                                        <p id="humdaity" class="text mb-2"></p>
+                                    </div>
+                                    <div class="text-white d-flex ">
+                                        <i class="fa-solid fa-wind pe-2 pt-1 "></i>
+                                        <p id="wind_kph" class="text mb-2"></p>
+                                    </div>
+                                    <div class="text-white d-flex ">
+                                        <i class="fa-brands fa-nfc-directional pe-2 pt-1 "></i>
+                                        <p id="wind_dir" class="text mb-2"></p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+                        <div class="col-md-4 day-2 rounded">
+                            <div id="data2">
+                                <p id="day-2-dayName" class="text-white p-2 text-center"></p>
+                                <div class="data text-center text-white">
+                                    <div id="icon-2" class=" text-center"></div>
+                                    <p id="temp2" class="mt-5"></p>
+                                    <p id="avghumidity" class="mt-5"></p>
+                                    <p id="status" class="mt-5"></p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="col-md-4 day-3 rounded">
+                            <div id="data3"></div>
+                            <p id="day-3-dayName" class="text-white p-2 text-center"></p>
+                            <div class="data text-center text-white">
+                                <div id="icon-3" class=" text-center"></div>
+                                <p id="temp3" class="mt-5"></p>
+                                <p id="avghumidity2" class="mt-5"></p>
+                                <p id="status2" class="mt-5"></p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </section>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/main.js"></script>
+
+
+
+</body>
+
+</html>
